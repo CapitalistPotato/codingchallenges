@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .summary-grid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:20px;
+    }
+
+    .summary-item{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .icon-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .icon-container img{
+      max-width: 100px;
+      height: auto;
+    }
+
+    .part-name{
+      margin: 10px;
+    }
+    
+    .part-name-wrapper{
+      margin-bottom: 25px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.3));
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .score{
+      margin-top: 5px;
+    }
+
+    .result-container{
+      margin-bottom: 25px;
+      background: linear-gradient(135deg, #fce38a, #f38181);
+      border-radius: 15px;
+      padding:20px;
+      color: #fff;
+    }
+    .container{
+      display: flex;
+      align-items: stretch;
+      background: #f7f7f7;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .border-container{
+      background: linear-gradient(135deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      padding:20px;
+      color: #fff;
+      border-radius: 20px 0 0 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 0;
+    }
+
+    .content-container{
+      padding:20px;
+      flex: 1;
+    }
+
+    .element-1, .element-2, .element-3, .element-4, .element-5{
+      margin-bottom: 10px;
+      padding:10px;
+    }
+
+    .circle{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      font-size: 24px;
+      font-weight: bold;
+      background: linear-gradient(135deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+      border-radius: 50%;
+      color: #fff;
+      position: relative;
+    }
+    .of-100{
+      font-size: 14px;
+      color: hsl(0, 0%, 59%);
+      margin-top: 5px;
+    }
+   </style>
+</head>
+<body>
+  <div class="container">
+    <div class="border-container">
+
+    <p>Your Result</p>
+    <div class="circle">
+     <div class="circle-content">
+        76
+        </div>
+    <p class="of-100">of 100</p>
+    </div>
+
+    <p>Great</p> 
+    <p>You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
+  <div class="content-container">
+  <p>Summary</p>
+
+<div class="summary-grid">
+  <div class="summary-item">
+    <div class="icon-container">
+      <img src="file:///C:\Users\Gamer\Desktop\Yavuzfrontend\results-summary-component-main\assets\images\icon-reaction.svg" alt="Reaction">    
+      <div class="part-name" style=" color: hsl(0, 100%, 67%)">Reaction</div>
+    <div class="score">80/100</div>
+  </div>
+
+  <div class="summary-item">
+    <div class="icon-container">
+      <img src="file:///C:\Users\Gamer\Desktop\Yavuzfrontend\results-summary-component-main\assets\images\icon-memory.svg" alt="Reaction">  
+      <div class="part-name" style="color: hsl(39, 100%, 56%)">Memory</div>
+    <div class="score">92/100</div>
+  </div>
+
+
+  <div class="summary-item">
+        <div class="icon-container">
+      <img src="file:///C:\Users\Gamer\Desktop\Yavuzfrontend\results-summary-component-main\assets\images\icon-verbal.svg" alt="Reaction">
+      <div class="part-name" style="color: hsl(166, 100%, 37%)">Verbal</div>
+    <div class="score">61/100</div>
+  </div>
+
+  <div class="summary-item">
+     <div class="icon-container">
+      <img src="file:///C:\Users\Gamer\Desktop\Yavuzfrontend\results-summary-component-main\assets\images\icon-visual.svg" alt="Reaction">
+      <div class="part-name" style="color: hsl(234, 85%, 45%)">Visual</div>
+    <div class="score">72/100</div>
+  </div>
+</div>
+ 
+
+  <p>Continue</p>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">CapitalistPotato</a>.
+  </div>
+  </div>
+  </div>
+</body>
+</html>
